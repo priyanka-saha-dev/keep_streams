@@ -1,0 +1,29 @@
+{
+  "name": "keep_Streams_Solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "start": "node ./streams/bin/www",
+    "test": "mocha ./streams/test/*.spec.js",
+    "lint": "node_modules/.bin/eslint './streams/api/v1/**/*.js' --ignore-path .eslintignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://assignments-repo.stackroute.in/stack_nodejs_assignments/nodejs-keep-level-2-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "JSONStream": "^1.3.5",
+    "chai": "^4.2.0",
+    "chai-fs": "^2.0.0",
+    "eslint": "^5.13.0",
+    "express": "^4.16.4",
+    "log4js": "^4.0.2",
+    "logger": "0.0.1",
+    "mongoose": "^5.4.10",
+    "stream-to-mongo-db": "^1.6.0"
+  }
+}
