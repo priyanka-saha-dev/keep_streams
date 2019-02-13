@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "start": "node ./streams/bin/www",
+    "start": "nodemon ./bin/www",
     "test": "mocha ./streams/test/*.spec.js",
     "lint": "node_modules/.bin/eslint './streams/api/v1/**/*.js' --ignore-path .eslintignore"
   },
@@ -21,6 +21,7 @@
     "chai-fs": "^2.0.0",
     "eslint": "^5.13.0",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "log4js": "^4.0.2",
     "logger": "0.0.1",
     "mongoose": "^5.4.10",

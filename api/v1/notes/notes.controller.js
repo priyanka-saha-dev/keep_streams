@@ -7,9 +7,9 @@ const getNotesAsStream = (req, res) => {
 
 const uploadNotes = (req, res) => {
     try {
-        const notes = JSON.parse(req.file.buffer.toString());
+        console.log("Upload bulk data")
         const userId = req.query.userId || req.userData.userId;
-        notesService.uploadNotes(userId, notes)
+        notesService.uploadNotes(userId)
             .then((result) => {
                 res.status(201).json(result.notes);
             })

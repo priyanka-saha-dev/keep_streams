@@ -11,8 +11,8 @@ const getNotesAsStream = (res, userId) => {
         });
 }
 
-const uploadNotes = (userId, notes) => {
-    return notesDao.bulkInsert(userId, notes);
+const uploadNotes = (userId) => {
+    return notesDao.bulkInsert(userId);
 };
 
 module.exports = {

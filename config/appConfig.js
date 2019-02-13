@@ -5,7 +5,8 @@ const serverConfig = {
 }
 
 const dbConfig = {
-  mongoUrl: 'mongodb://localhost:27017/keep'
+  mongoUrl: 'mongodb://localhost:27017/keep',
+  noteCollection: 'notes'
 }
 
 const authConfig = {
