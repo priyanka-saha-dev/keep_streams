@@ -1,17 +1,30 @@
 const notesService = require('./notes.service');
 
 const getNotesAsStream = (req, res) => {
-    const userId = req.query.userId || req.userData.userId;
-    notesService.getNotesAsStream(res, userId);
+    try {
+        log.info("Get notes data")
+        const userId = req.query.userId;
+        notesService.getNotesAsStream(userId)
+            .then((result) => {
+                res.status(result.status).json(result);
+            }).catch((error) => {
+                res.status(error.status).json(error);
+            });
+    } catch (err) {
+        res.status(500).json('Something went wrong. Error: ' + err.message);
+    }
+
+
+
 };
 
 const uploadNotes = (req, res) => {
     try {
-        console.log("Upload bulk data")
-        const userId = req.query.userId || req.userData.userId;
+        log.info("Upload bulk data")
+        const userId = req.query.userId;
         notesService.uploadNotes(userId)
             .then((result) => {
-                res.status(201).json(result);
+                res.status(result.status).json(result);
             })
             .catch((error) => {
                 res.status(error.status).json(error);

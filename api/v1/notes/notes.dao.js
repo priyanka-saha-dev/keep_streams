@@ -2,7 +2,7 @@ let noteModel = require('./notes.entity');
 const fs = require('fs');
 const path = require('path');
 const JSONStream = require('JSONStream');
-const { streamToMongoDB } = require('stream-to-mongo-db');
+const streamToMongo = require('stream-to-mongo-db');
 const { dbConfig } = require('../../../config').appConfig;
 const { Transform } = require('stream');
 const uuidv1 = require('uuid/v1');
@@ -12,30 +12,64 @@ const log = require('../../../logger');
 const readNotesAsStream = (userId) => {
     return new Promise((resolve, reject) => {
 
-        const note = new noteModel({
-            userId: userId
-        });
-        log.info('getting notes as stream');
-        const notesStream = note.findByUserIdStream();
+        try {
+            const query = {
+                userId: userId
+            };
+            log.info('getting notes as stream for userid - ', userId);
+            let output = [];
+            
+            noteModel
+                .find(query)
+                .lean()
+                .cursor()
+                .pipe(JSONStream.stringify())
+                .pipe(JSONStream.parse('*'))
+                .on('data', (data) => output.push(data))
+                .on('end', () => {
+                    log.info('read finished', output);
+                    resolve({
+                        message: `Notes found - count = ${output.length}`,
+                        data: output,
+                        status: 200
+                    });
 
-        resolve(notesStream.pipe(JSONStream.stringify()));
+                }).on('error', (error) => {
+                    log.info('Notes NOT found - ', error);
+                    reject({
+                        message: error.message,
+                        status: 500
+                    });
+                });
 
+
+            log.info(output);
+
+        } catch (err) {
+            log.info('error :', err);
+            reject({
+                message: 'Notes NOT found',
+                status: 500
+            })
+        }
     });
 };
 
-const generateNoteID = new Transform({
+const transformNoteModel = new Transform({
     readableObjectMode: true,
     writableObjectMode: true,
     transform(chunk, encoding, callback) {
 
 
-        let note = new noteModel({
+        chunk = new noteModel({
             id: uuidv1(),
             title: chunk.title,
-            text: chunk.text
-        })
+            text: chunk.text,
+            userId: chunk.userId
+        });
+
         this.push(chunk);
-        //console.log('chunk',chunk);
+        log.info('chunk', chunk);
 
         callback();
     }
@@ -51,27 +85,32 @@ const bulkInsert = (userId) => {
             const outputDBConfig = { dbURL: dbConfig.mongoUrl, collection: dbConfig.noteCollection };
 
             // create the writable stream
-            const writableStream = streamToMongoDB(outputDBConfig);
+            const writableStream = streamToMongo.streamToMongoDB(outputDBConfig);
 
             // create readable stream and consume it
-            //const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
-
-            console.log('mock notes:', mock_notes);
+            const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
 
             fs.createReadStream(mock_notes, 'utf8')
                 .pipe(JSONStream.parse('*'))
-                .pipe(generateNoteID)
+                .on('data', (data) => data.userId = userId)
+                .pipe(transformNoteModel)
                 .pipe(writableStream)
-                //.on('data', () => console.log(data))
-                .on('finish', () => console.log('Done'));
-
-            resolve({
-                message: 'Notes inserted',
-                status: 200
-            });
+                .on('finish', () => {
+                    log.info('data inserted');
+                    resolve({
+                        message: 'Notes inserted',
+                        status: 200
+                    });
+                }).on('error', (error) => {
+                    log.info('data not inserted - ', error);
+                    reject({
+                        message: error.message,
+                        status: 500
+                    });
+                });
 
         } catch (err) {
-            console.log('error :', err);
+            log.info('error :', err);
             reject({
                 message: 'Notes NOT inserted',
                 status: 500

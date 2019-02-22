@@ -2,7 +2,7 @@ const router = require('express').Router();
 const users = require('./users');
 const notes = require('./notes');
 const auth = require('./auth');
-//console.log('inside api/v1/ route.');
+log.info('inside api/v1/ route.');
 
 //write your routes here
 router.use('/users/', users);
