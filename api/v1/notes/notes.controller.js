@@ -1,4 +1,5 @@
 const notesService = require('./notes.service');
+const log = require('../../../logger');
 
 const getNotesAsStream = (req, res) => {
     try {
