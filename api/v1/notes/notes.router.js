@@ -3,7 +3,7 @@ const router = require('express').Router();
 const notesController = require('./notes.controller');
 //const storage = multer.memoryStorage();
 //const upload = multer({ storage: storage });
-const auth = require('../auth');
+const auth = require('../auth/auth');
 
 router.use(auth.isUserAuthenticated);
 

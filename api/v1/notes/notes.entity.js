@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-let noteSchema = new mongoose.Schema({
+const NoteSchema = new Schema({
     id: {
         type: String,
-        lowercase: true,
-        unique: true,
-        required: true,
+        required: true
     },
     title: {
         type: String,
@@ -17,7 +16,6 @@ let noteSchema = new mongoose.Schema({
     },
     state: {
         type: String,
-        enum: ['not-started', 'started', 'completed'],
         default: 'not-started'
     },
     userId: {
@@ -25,18 +23,16 @@ let noteSchema = new mongoose.Schema({
         required: true
     },
     createdOn: {
-        type: String,
-        default: Date.now(),
-        required: true
+        type: Date,
+        default: Date.now()
     },
     modifiedOn: {
-        type: String,
-        default: Date.now(),
-        required: true
+        type: Date,
+        default: Date.now()
     }
 });
 
-noteSchema.methods.findByUserIdStream = function () {
+NoteSchema.methods.findByUserIdStream = function () {
     return this.model('note')
         .find({
             $or: [
@@ -47,4 +43,4 @@ noteSchema.methods.findByUserIdStream = function () {
         .lean().stream();
 };
 
-module.exports = mongoose.model('note', noteSchema);
+module.exports = mongoose.model('note', NoteSchema);

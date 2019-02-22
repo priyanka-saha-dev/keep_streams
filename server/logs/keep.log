@@ -38,3 +38,11 @@
 [2019-02-13T18:44:33.883] [INFO] default - Server running at http://127.0.0.1:3000/
 [2019-02-13T18:44:34.925] [INFO] default - Connected to mongo database
 [2019-02-13T18:44:50.782] [INFO] default - inserting notes in db
+[2019-02-22T18:19:27.513] [INFO] default - Server running at http://127.0.0.1:3000/
+[2019-02-22T18:19:28.838] [INFO] default - Connected to mongo database
+[2019-02-22T18:27:54.979] [INFO] default - Server running at http://127.0.0.1:3000/
+[2019-02-22T18:27:56.027] [INFO] default - Connected to mongo database
+[2019-02-22T18:29:08.608] [INFO] default - Server running at http://127.0.0.1:3000/
+[2019-02-22T18:29:09.635] [INFO] default - Connected to mongo database
+[2019-02-22T18:30:12.036] [INFO] default - Server running at http://127.0.0.1:3000/
+[2019-02-22T18:30:13.061] [INFO] default - Connected to mongo database

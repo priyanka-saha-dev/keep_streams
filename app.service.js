@@ -48,18 +48,26 @@ const setAppMiddleware = (app) => {
 // api configuration
 const apiSetUp = (app) => {
   app.use('/api/v1/', api);
+
+  app.use((req, res) => {
+    let err = {
+      message: 'Invalid route',
+      status: 404
+    }
+    res.status(err.status).send(err);
+  });
 }
 
 // Error handler to get 404 request
 const errorHandler404 = (app) => {
   // catch 404
-  app.use(function(req, res) {
+  app.use(function (req, res) {
     let originUrl = `http://${serverConfig.hostname}:${serverConfig.port}${req.url}`;
     let err = new Error();
     err.status = 404;
     err.url = originUrl
     err.message = `Http failure response for ${originUrl}: 404 Not Found`,
-    logger.error(err.message);
+      logger.error(err.message);
     res.send(err);
   });
 }
