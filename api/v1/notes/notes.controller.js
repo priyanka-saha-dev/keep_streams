@@ -11,7 +11,7 @@ const uploadNotes = (req, res) => {
         const userId = req.query.userId || req.userData.userId;
         notesService.uploadNotes(userId)
             .then((result) => {
-                res.status(201).json(result.notes);
+                res.status(201).json(result);
             })
             .catch((error) => {
                 res.status(error.status).json(error);

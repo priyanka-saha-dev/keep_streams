@@ -1,5 +1,6 @@
 let noteModel = require('./notes.entity');
 const fs = require('fs');
+const path = require('path');
 const JSONStream = require('JSONStream');
 const { streamToMongoDB } = require('stream-to-mongo-db');
 const { dbConfig } = require('../../../config').appConfig;
@@ -25,37 +26,35 @@ const bulkInsert = (userId) => {
 
         log.info('inserting notes in db');
 
-        // where the data will end up
-        const outputDBConfig = { dbURL: dbConfig.mongoUrl, collection: dbConfig.noteCollection };
+        try {
+            // where the data will end up
+            const outputDBConfig = { dbURL: dbConfig.mongoUrl, collection: dbConfig.noteCollection };
 
-        // create the writable stream
-        const writableStream = streamToMongoDB(outputDBConfig);
+            // create the writable stream
+            const writableStream = streamToMongoDB(outputDBConfig);
 
-        // create readable stream and consume it
-        const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
-        fs.createReadStream(mock_notes, 'utf8')
-            .pipe(JSONStream.parse('*'))
-            .pipe(writableStream);
+            // create readable stream and consume it
+            const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
 
-        req.on('end', () => {
-            res.status(200).send({
-                message : 'Notes inserted'
+            console.log('mock notes:', mock_notes);
+
+            fs.createReadStream(mock_notes, 'utf8')
+                .pipe(JSONStream.parse('*'))
+                .pipe(writableStream);
+
+            resolve({
+                message: 'Notes inserted',
+                status: 200
+            });
+            
+        } catch (err) {
+            console.log('error :', err);
+            reject({
+                message: 'Notes NOT inserted',
+                status: 500
             })
-        
-        });
-        // notes = notes.map(n => {
-        //     let note = n;
-        //     note.id = uuidv1();
-        //     note.userId = userId;
-        //     note.state = 'not-started';
-        //     return note;
-        // });
-        // log.debug(notes);
+        }
 
-        // noteModel.insertMany(notes, (err, insertedNotes) => {
-        //     if (err) throw err;
-        //     resolve({ notes: insertedNotes });
-        // });
 
     });
 }
