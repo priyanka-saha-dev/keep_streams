@@ -4,6 +4,8 @@ const path = require('path');
 const JSONStream = require('JSONStream');
 const { streamToMongoDB } = require('stream-to-mongo-db');
 const { dbConfig } = require('../../../config').appConfig;
+const { Transform } = require('stream');
+const uuidv1 = require('uuid/v1');
 
 const log = require('../../../logger');
 
@@ -19,7 +21,25 @@ const readNotesAsStream = (userId) => {
         resolve(notesStream.pipe(JSONStream.stringify()));
 
     });
-}
+};
+
+const generateNoteID = new Transform({
+    readableObjectMode: true,
+    writableObjectMode: true,
+    transform(chunk, encoding, callback) {
+
+
+        let note = new noteModel({
+            id: uuidv1(),
+            title: chunk.title,
+            text: chunk.text
+        })
+        this.push(chunk);
+        //console.log('chunk',chunk);
+
+        callback();
+    }
+});
 
 const bulkInsert = (userId) => {
     return new Promise((resolve, reject) => {
@@ -34,19 +54,22 @@ const bulkInsert = (userId) => {
             const writableStream = streamToMongoDB(outputDBConfig);
 
             // create readable stream and consume it
-            const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
+            //const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
 
             console.log('mock notes:', mock_notes);
 
             fs.createReadStream(mock_notes, 'utf8')
                 .pipe(JSONStream.parse('*'))
-                .pipe(writableStream);
+                .pipe(generateNoteID)
+                .pipe(writableStream)
+                //.on('data', () => console.log(data))
+                .on('finish', () => console.log('Done'));
 
             resolve({
                 message: 'Notes inserted',
                 status: 200
             });
-            
+
         } catch (err) {
             console.log('error :', err);
             reject({
