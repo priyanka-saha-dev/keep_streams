@@ -8,4 +8,8 @@ router.use('/users/', users);
 router.use('/notes/', notes);
 router.use('/auth/', auth);
 
+router.get('/', (req, res) => {
+    res.status(200).send("ok");
+});
+
 module.exports = router;

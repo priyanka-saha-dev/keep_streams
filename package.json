@@ -5,7 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "mocha ./streams/test/*.spec.js",
+    "test": "mocha ./test/*.spec.js --timeout 10000",
     "lint": "node_modules/.bin/eslint './streams/api/v1/**/*.js' --ignore-path .eslintignore"
   },
   "repository": {
@@ -24,8 +24,10 @@
     "jsonwebtoken": "^8.4.0",
     "log4js": "^4.0.2",
     "logger": "0.0.1",
+    "mocha": "^6.0.1",
     "mongoose": "^5.4.10",
     "stream-to-mongo-db": "^1.6.0",
+    "supertest": "^3.4.2",
     "uuid": "^3.3.2"
   }
 }

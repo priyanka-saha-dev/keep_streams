@@ -99,7 +99,7 @@ const bulkInsert = (userId) => {
                     log.info('data inserted');
                     resolve({
                         message: 'Notes inserted',
-                        status: 200
+                        status: 201
                     });
                 }).on('error', (error) => {
                     log.info('data not inserted - ', error);
