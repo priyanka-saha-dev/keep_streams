@@ -25,35 +25,35 @@ describe('Streams Test scenarios', () => {
     it('Login a user', (done) => {
         done();
 
-        // request(app)
-        //     .post(`/api/v1/users/login`)
-        //     .send(config.USER_1)
-        //     .expect(200)
-        //     .then((response) => {
+        request(app)
+            .post(`/api/v1/users/login`)
+            .send(config.USER_1)
+            .expect(200)
+            .then((response) => {
 
-        //         expect(response.body).to.have.property('user');
-        //         expect(response.body).to.have.property('token');
+                expect(response.body).to.have.property('user');
+                expect(response.body).to.have.property('token');
 
-        //         expect(response.body.user).to.have.property('userName');
-        //         expect(response.body.user.userName).to.equal(config.USER_1.username);
+                expect(response.body.user).to.have.property('userName');
+                expect(response.body.user.userName).to.equal(config.USER_1.username);
 
-        //         token = response.body.token;
+                token = response.body.token;
 
-        //         done();
-        //     });
+                done();
+            });
     });
 
     it('Upload data to mongo as Streams for a user', (done) => {
 
         //done();
-        request(app)
-            .post(`/api/v1/notes/stream?userId=${config.userID}`)
-            .set('Authorization', `Bearer ${token}`)
-            .expect(201)
-            .then((response) => {
-                expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
-                done();
-            });
+        // request(app)
+        //     .post(`/api/v1/notes/stream?userId=${config.userID}`)
+        //     .set('Authorization', `Bearer ${token}`)
+        //     .expect(201)
+        //     .then((response) => {
+        //         expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
+        //         done();
+        //     });
     });
 
     it('Read data from mongo as Streams for a user', (done) => {
