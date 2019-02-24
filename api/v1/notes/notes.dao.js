@@ -16,7 +16,7 @@ const readNotesAsStream = (userId) => {
             const query = {
                 userId: userId
             };
-            log.info('getting notes as stream for userid - ', userId);
+            //log.info('getting notes as stream for userid - ', userId);
             let output = [];
             
             noteModel
@@ -27,7 +27,7 @@ const readNotesAsStream = (userId) => {
                 .pipe(JSONStream.parse('*'))
                 .on('data', (data) => output.push(data))
                 .on('end', () => {
-                    log.info('read finished', output);
+                    //log.info('read finished', output);
                     resolve({
                         message: `Notes found - count = ${output.length}`,
                         data: output,
@@ -35,7 +35,7 @@ const readNotesAsStream = (userId) => {
                     });
 
                 }).on('error', (error) => {
-                    log.info('Notes NOT found - ', error);
+                    //log.info('Notes NOT found - ', error);
                     reject({
                         message: error.message,
                         status: 500
@@ -43,10 +43,10 @@ const readNotesAsStream = (userId) => {
                 });
 
 
-            log.info(output);
+            //log.info(output);
 
         } catch (err) {
-            log.info('error :', err);
+            //log.info('error :', err);
             reject({
                 message: 'Notes NOT found',
                 status: 500
@@ -69,7 +69,7 @@ const transformNoteModel = new Transform({
         });
 
         this.push(chunk);
-        log.info('chunk', chunk);
+        //log.info('chunk', chunk);
 
         callback();
     }
@@ -78,7 +78,7 @@ const transformNoteModel = new Transform({
 const bulkInsert = (userId) => {
     return new Promise((resolve, reject) => {
 
-        log.info('inserting notes in db');
+        //log.info('inserting notes in db');
 
         try {
             // where the data will end up
@@ -96,13 +96,13 @@ const bulkInsert = (userId) => {
                 .pipe(transformNoteModel)
                 .pipe(writableStream)
                 .on('finish', () => {
-                    log.info('data inserted');
+                    //log.info('data inserted');
                     resolve({
                         message: 'Notes inserted',
                         status: 201
                     });
                 }).on('error', (error) => {
-                    log.info('data not inserted - ', error);
+                    //log.info('data not inserted - ', error);
                     reject({
                         message: error.message,
                         status: 500
@@ -110,7 +110,7 @@ const bulkInsert = (userId) => {
                 });
 
         } catch (err) {
-            log.info('error :', err);
+            //log.info('error :', err);
             reject({
                 message: 'Notes NOT inserted',
                 status: 500

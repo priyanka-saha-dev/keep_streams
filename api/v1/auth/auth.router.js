@@ -9,12 +9,12 @@ router.post('/isAuthenticated', (req, res, next) => {
     auth.isUserAuthenticatedRouter(req, res).then((response) => {
       res.status(response.status).send(response);
     }).catch((error) => {
-      log.info('Promise rejected with', error);
+      //log.info('Promise rejected with', error);
       res.status(error.status).send(error);
     });
 
   } catch (err) {
-    log.info(err);
+    //log.info(err);
     res.send({ message: 'Failed to complete request' });
   }
 });
