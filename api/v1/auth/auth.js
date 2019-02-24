@@ -33,7 +33,7 @@ const isUserAuthenticated = (req, res, next) => {
 
         verifyToken(token, authConfig.jwtSecret, (err, decoded) => {
 
-            log.info('err:',err);
+            log.info('err in verifytoken:',err);
             if (err && err.message) {
                 if (err.name === 'TokenExpiredError') {
                     res.status(403).send(err.message);
@@ -43,6 +43,7 @@ const isUserAuthenticated = (req, res, next) => {
             } else if (err) {
                 res.status(403).send(err);
             } else if (next) {
+                log.info('calling next');
                 next();
             }
         });

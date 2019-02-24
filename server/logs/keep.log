@@ -1,10 +1,590 @@
-[2019-02-23T14:03:42.226] [INFO] default - Connected to mongo database
-[2019-02-23T14:04:37.847] [INFO] default - Connected to mongo database
-[2019-02-23T14:06:36.886] [INFO] default - Connected to mongo database
-[2019-02-23T14:07:47.706] [INFO] default - Connected to mongo database
-[2019-02-23T14:08:13.513] [INFO] default - Connected to mongo database
-[2019-02-23T21:53:50.204] [INFO] default - Connected to mongo database
-[2019-02-23T22:53:03.234] [INFO] default - Server running at http://127.0.0.1:3000/
-[2019-02-23T22:53:03.403] [INFO] default - Connected to mongo database
-[2019-02-23T22:54:17.614] [INFO] default - Connected to mongo database
-[2019-02-23T22:54:38.556] [INFO] default - Connected to mongo database
+[2019-02-24T12:20:18.221] [INFO] default - Connected to mongo database
+[2019-02-24T12:20:18.256] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:20:18.256] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:20:18.261] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:20:18.262] [INFO] default - calling next
+[2019-02-24T12:23:28.103] [INFO] default - Connected to mongo database
+[2019-02-24T12:23:28.152] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:23:28.153] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:23:28.157] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:23:28.158] [INFO] default - calling next
+[2019-02-24T12:23:28.159] [INFO] default - base note route
+[2019-02-24T12:24:22.609] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:22.611] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:22.616] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:24:22.617] [INFO] default - calling next
+[2019-02-24T12:24:22.618] [INFO] default - Upload bulk data
+[2019-02-24T12:24:22.619] [INFO] default - inserting notes in db
+[2019-02-24T12:24:22.656] [INFO] default - Connected to mongo database
+[2019-02-24T12:24:22.701] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e4e,
+  id: '042028d0-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 1',
+  text: 'text 1',
+  userId: 'test' }
+[2019-02-24T12:24:22.706] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e4f,
+  id: '04233610-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 2',
+  text: 'text 2',
+  userId: 'test' }
+[2019-02-24T12:24:22.707] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e50,
+  id: '04238430-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 3',
+  text: 'text 3',
+  userId: 'test' }
+[2019-02-24T12:24:22.709] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e51,
+  id: '0423ab40-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 4',
+  text: 'text 4',
+  userId: 'test' }
+[2019-02-24T12:24:22.710] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e52,
+  id: '0423f960-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 5',
+  text: 'text 5',
+  userId: 'test' }
+[2019-02-24T12:24:22.711] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:54:22.517Z,
+  modifiedOn: 2019-02-24T06:54:22.517Z,
+  _id: 5c723f9ebebaad70aad98e53,
+  id: '04242070-3801-11e9-9a3f-1fcaba71afc9',
+  title: 'title 6',
+  text: 'text 6',
+  userId: 'test' }
+[2019-02-24T12:24:23.311] [INFO] default - data inserted
+[2019-02-24T12:24:23.341] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:23.341] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:23.342] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:24:23.342] [INFO] default - calling next
+[2019-02-24T12:24:23.343] [INFO] default - Get notes data
+[2019-02-24T12:24:23.344] [INFO] default - getting notes as stream for userid -  test
+[2019-02-24T12:24:23.352] [INFO] default - []
+[2019-02-24T12:24:23.366] [INFO] default - read finished [ { _id: '5c723f9ebebaad70aad98e4e',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '042028d0-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 1',
+    text: 'text 1',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e4f',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04233610-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 2',
+    text: 'text 2',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e50',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04238430-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 3',
+    text: 'text 3',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e51',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '0423ab40-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 4',
+    text: 'text 4',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e52',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '0423f960-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 5',
+    text: 'text 5',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e53',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04242070-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 6',
+    text: 'text 6',
+    userId: 'test' } ]
+[2019-02-24T12:24:23.383] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:23.383] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkwNTY3LCJleHAiOjE1NTEwMjY1Njd9.ZCzU9qqYW7DLUdzX6C0LOwuF72yNBxUAHDr0kk8eUGQ
+[2019-02-24T12:24:23.384] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:24:23.384] [INFO] default - calling next
+[2019-02-24T12:24:23.385] [INFO] default - Get notes data
+[2019-02-24T12:24:23.385] [INFO] default - getting notes as stream for userid -  unknown
+[2019-02-24T12:24:23.387] [INFO] default - []
+[2019-02-24T12:24:23.390] [INFO] default - read finished []
+[2019-02-24T12:26:23.427] [INFO] default - Connected to mongo database
+[2019-02-24T12:26:23.503] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T12:26:23.515] [INFO] default - user data for Register:  { _id: 5c724017c64202717175cb9a,
+  username: 'testUser',
+  password: 'test',
+  userId: '4c255ab0-3801-11e9-9b4f-b592cd522061' }
+[2019-02-24T12:26:23.532] [INFO] default - Error occured in DAO { MongoError: E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }
+    at Function.create (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/operations/collection_ops.js:859:39)
+    at /home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+  driver: true,
+  name: 'MongoError',
+  index: 0,
+  code: 11000,
+  errmsg:
+   'E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }',
+  [Symbol(mongoErrorContextSymbol)]: {} }
+[2019-02-24T12:26:23.534] [INFO] default - Promise rejected with { message: 'username is already exist', status: 403 }
+[2019-02-24T12:26:33.454] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T12:26:33.473] [INFO] default - login with payload { userName: 'testUser',
+  userId: '65725290-37ff-11e9-b52e-9dfc2e11b9fd' }
+[2019-02-24T12:26:33.474] [INFO] default - Sign token
+[2019-02-24T12:26:33.481] [INFO] default - err null
+[2019-02-24T12:26:33.482] [INFO] default - Promise resolved
+[2019-02-24T12:26:33.496] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.496] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.500] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:26:33.500] [INFO] default - calling next
+[2019-02-24T12:26:33.500] [INFO] default - Upload bulk data
+[2019-02-24T12:26:33.501] [INFO] default - inserting notes in db
+[2019-02-24T12:26:33.518] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cb9b,
+  id: '521a9f70-3801-11e9-9b4f-b592cd522061',
+  title: 'title 1',
+  text: 'text 1',
+  userId: 'test' }
+[2019-02-24T12:26:33.521] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cb9c,
+  id: '521bff00-3801-11e9-9b4f-b592cd522061',
+  title: 'title 2',
+  text: 'text 2',
+  userId: 'test' }
+[2019-02-24T12:26:33.522] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cb9d,
+  id: '521c4d20-3801-11e9-9b4f-b592cd522061',
+  title: 'title 3',
+  text: 'text 3',
+  userId: 'test' }
+[2019-02-24T12:26:33.523] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cb9e,
+  id: '521c7430-3801-11e9-9b4f-b592cd522061',
+  title: 'title 4',
+  text: 'text 4',
+  userId: 'test' }
+[2019-02-24T12:26:33.524] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cb9f,
+  id: '521c9b40-3801-11e9-9b4f-b592cd522061',
+  title: 'title 5',
+  text: 'text 5',
+  userId: 'test' }
+[2019-02-24T12:26:33.525] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:56:23.328Z,
+  modifiedOn: 2019-02-24T06:56:23.328Z,
+  _id: 5c724021c64202717175cba0,
+  id: '521cc250-3801-11e9-9b4f-b592cd522061',
+  title: 'title 6',
+  text: 'text 6',
+  userId: 'test' }
+[2019-02-24T12:26:33.558] [INFO] default - data inserted
+[2019-02-24T12:26:33.565] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.565] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.566] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:26:33.566] [INFO] default - calling next
+[2019-02-24T12:26:33.566] [INFO] default - Get notes data
+[2019-02-24T12:26:33.567] [INFO] default - getting notes as stream for userid -  test
+[2019-02-24T12:26:33.570] [INFO] default - []
+[2019-02-24T12:26:33.593] [INFO] default - read finished [ { _id: '5c723f9ebebaad70aad98e4e',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '042028d0-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 1',
+    text: 'text 1',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e4f',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04233610-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 2',
+    text: 'text 2',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e50',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04238430-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 3',
+    text: 'text 3',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e51',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '0423ab40-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 4',
+    text: 'text 4',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e52',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '0423f960-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 5',
+    text: 'text 5',
+    userId: 'test' },
+  { _id: '5c723f9ebebaad70aad98e53',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:54:22.517Z',
+    modifiedOn: '2019-02-24T06:54:22.517Z',
+    id: '04242070-3801-11e9-9a3f-1fcaba71afc9',
+    title: 'title 6',
+    text: 'text 6',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cb9b',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521a9f70-3801-11e9-9b4f-b592cd522061',
+    title: 'title 1',
+    text: 'text 1',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cb9c',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521bff00-3801-11e9-9b4f-b592cd522061',
+    title: 'title 2',
+    text: 'text 2',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cb9d',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521c4d20-3801-11e9-9b4f-b592cd522061',
+    title: 'title 3',
+    text: 'text 3',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cb9e',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521c7430-3801-11e9-9b4f-b592cd522061',
+    title: 'title 4',
+    text: 'text 4',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cb9f',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521c9b40-3801-11e9-9b4f-b592cd522061',
+    title: 'title 5',
+    text: 'text 5',
+    userId: 'test' },
+  { _id: '5c724021c64202717175cba0',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:56:23.328Z',
+    modifiedOn: '2019-02-24T06:56:23.328Z',
+    id: '521cc250-3801-11e9-9b4f-b592cd522061',
+    title: 'title 6',
+    text: 'text 6',
+    userId: 'test' } ]
+[2019-02-24T12:26:33.603] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.604] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiNjU3MjUyOTAtMzdmZi0xMWU5LWI1MmUtOWRmYzJlMTFiOWZkIiwiaWF0IjoxNTUwOTkxMzkzLCJleHAiOjE1NTEwMjczOTN9.Op-4W7HMxfLthc6dl_TGTCDw26ipeHxWJeqU3xbb5tg
+[2019-02-24T12:26:33.604] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:26:33.604] [INFO] default - calling next
+[2019-02-24T12:26:33.604] [INFO] default - Get notes data
+[2019-02-24T12:26:33.604] [INFO] default - getting notes as stream for userid -  unknown
+[2019-02-24T12:26:33.606] [INFO] default - []
+[2019-02-24T12:26:33.610] [INFO] default - read finished []
+[2019-02-24T12:28:14.062] [INFO] default - Connected to mongo database
+[2019-02-24T12:28:14.145] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T12:28:14.158] [INFO] default - user data for Register:  { _id: 5c7240862e850f71d41e87f8,
+  username: 'testUser',
+  password: 'test',
+  userId: '8e17fbd0-3801-11e9-a6d7-8d256374e972' }
+[2019-02-24T12:28:14.895] [INFO] default - Success occured in DAO
+[2019-02-24T12:28:14.896] [INFO] default - Promise resolved { message: 'Registration Success.',
+  status: 201,
+  user: { userInfo: 'testUser' } }
+[2019-02-24T12:28:14.935] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T12:28:15.109] [INFO] default - login with payload { userName: 'testUser',
+  userId: '8e17fbd0-3801-11e9-a6d7-8d256374e972' }
+[2019-02-24T12:28:15.110] [INFO] default - Sign token
+[2019-02-24T12:28:15.119] [INFO] default - err null
+[2019-02-24T12:28:15.119] [INFO] default - Promise resolved
+[2019-02-24T12:28:15.129] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.130] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.134] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:15.134] [INFO] default - calling next
+[2019-02-24T12:28:15.134] [INFO] default - Upload bulk data
+[2019-02-24T12:28:15.135] [INFO] default - inserting notes in db
+[2019-02-24T12:28:15.151] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87f9,
+  id: '8eaee4a0-3801-11e9-a6d7-8d256374e972',
+  title: 'title 1',
+  text: 'text 1',
+  userId: 'test' }
+[2019-02-24T12:28:15.153] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87fa,
+  id: '8eafcf00-3801-11e9-a6d7-8d256374e972',
+  title: 'title 2',
+  text: 'text 2',
+  userId: 'test' }
+[2019-02-24T12:28:15.154] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87fb,
+  id: '8eaff610-3801-11e9-a6d7-8d256374e972',
+  title: 'title 3',
+  text: 'text 3',
+  userId: 'test' }
+[2019-02-24T12:28:15.155] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87fc,
+  id: '8eb01d20-3801-11e9-a6d7-8d256374e972',
+  title: 'title 4',
+  text: 'text 4',
+  userId: 'test' }
+[2019-02-24T12:28:15.155] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87fd,
+  id: '8eb04430-3801-11e9-a6d7-8d256374e972',
+  title: 'title 5',
+  text: 'text 5',
+  userId: 'test' }
+[2019-02-24T12:28:15.156] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:13.976Z,
+  modifiedOn: 2019-02-24T06:58:13.976Z,
+  _id: 5c7240872e850f71d41e87fe,
+  id: '8eb06b40-3801-11e9-a6d7-8d256374e972',
+  title: 'title 6',
+  text: 'text 6',
+  userId: 'test' }
+[2019-02-24T12:28:15.668] [INFO] default - data inserted
+[2019-02-24T12:28:15.676] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.676] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.677] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:15.677] [INFO] default - calling next
+[2019-02-24T12:28:15.677] [INFO] default - Get notes data
+[2019-02-24T12:28:15.678] [INFO] default - getting notes as stream for userid -  test
+[2019-02-24T12:28:15.682] [INFO] default - []
+[2019-02-24T12:28:15.696] [INFO] default - read finished [ { _id: '5c7240872e850f71d41e87f9',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eaee4a0-3801-11e9-a6d7-8d256374e972',
+    title: 'title 1',
+    text: 'text 1',
+    userId: 'test' },
+  { _id: '5c7240872e850f71d41e87fa',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eafcf00-3801-11e9-a6d7-8d256374e972',
+    title: 'title 2',
+    text: 'text 2',
+    userId: 'test' },
+  { _id: '5c7240872e850f71d41e87fb',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eaff610-3801-11e9-a6d7-8d256374e972',
+    title: 'title 3',
+    text: 'text 3',
+    userId: 'test' },
+  { _id: '5c7240872e850f71d41e87fc',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eb01d20-3801-11e9-a6d7-8d256374e972',
+    title: 'title 4',
+    text: 'text 4',
+    userId: 'test' },
+  { _id: '5c7240872e850f71d41e87fd',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eb04430-3801-11e9-a6d7-8d256374e972',
+    title: 'title 5',
+    text: 'text 5',
+    userId: 'test' },
+  { _id: '5c7240872e850f71d41e87fe',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:13.976Z',
+    modifiedOn: '2019-02-24T06:58:13.976Z',
+    id: '8eb06b40-3801-11e9-a6d7-8d256374e972',
+    title: 'title 6',
+    text: 'text 6',
+    userId: 'test' } ]
+[2019-02-24T12:28:15.706] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.706] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiOGUxN2ZiZDAtMzgwMS0xMWU5LWE2ZDctOGQyNTYzNzRlOTcyIiwiaWF0IjoxNTUwOTkxNDk1LCJleHAiOjE1NTEwMjc0OTV9.2qaxVLo6NhM7cvW7CTzP20OMkMCivzhq08m6q6iIH1E
+[2019-02-24T12:28:15.706] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:15.706] [INFO] default - calling next
+[2019-02-24T12:28:15.706] [INFO] default - Get notes data
+[2019-02-24T12:28:15.706] [INFO] default - getting notes as stream for userid -  unknown
+[2019-02-24T12:28:15.708] [INFO] default - []
+[2019-02-24T12:28:15.710] [INFO] default - read finished []
+[2019-02-24T12:28:46.212] [INFO] default - Connected to mongo database
+[2019-02-24T12:28:46.288] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T12:28:46.300] [INFO] default - user data for Register:  { _id: 5c7240a6c03f6d720ea09157,
+  username: 'testUser',
+  password: 'test',
+  userId: 'a1409dc0-3801-11e9-8d10-5558cc477788' }
+[2019-02-24T12:28:46.633] [INFO] default - Success occured in DAO
+[2019-02-24T12:28:46.635] [INFO] default - Promise resolved { message: 'Registration Success.',
+  status: 201,
+  user: { userInfo: 'testUser' } }
+[2019-02-24T12:28:46.674] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T12:28:46.849] [INFO] default - login with payload { userName: 'testUser',
+  userId: 'a1409dc0-3801-11e9-8d10-5558cc477788' }
+[2019-02-24T12:28:46.850] [INFO] default - Sign token
+[2019-02-24T12:28:46.858] [INFO] default - err null
+[2019-02-24T12:28:46.859] [INFO] default - Promise resolved
+[2019-02-24T12:28:46.871] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:46.872] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:46.877] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:46.878] [INFO] default - calling next
+[2019-02-24T12:28:46.878] [INFO] default - Upload bulk data
+[2019-02-24T12:28:46.879] [INFO] default - inserting notes in db
+[2019-02-24T12:28:46.895] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea09158,
+  id: 'a19aa4a0-3801-11e9-8d10-5558cc477788',
+  title: 'title 1',
+  text: 'text 1',
+  userId: 'test' }
+[2019-02-24T12:28:46.898] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea09159,
+  id: 'a19bb610-3801-11e9-8d10-5558cc477788',
+  title: 'title 2',
+  text: 'text 2',
+  userId: 'test' }
+[2019-02-24T12:28:46.899] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea0915a,
+  id: 'a19c0430-3801-11e9-8d10-5558cc477788',
+  title: 'title 3',
+  text: 'text 3',
+  userId: 'test' }
+[2019-02-24T12:28:46.900] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea0915b,
+  id: 'a19c2b40-3801-11e9-8d10-5558cc477788',
+  title: 'title 4',
+  text: 'text 4',
+  userId: 'test' }
+[2019-02-24T12:28:46.902] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea0915c,
+  id: 'a19c5250-3801-11e9-8d10-5558cc477788',
+  title: 'title 5',
+  text: 'text 5',
+  userId: 'test' }
+[2019-02-24T12:28:46.903] [INFO] default - chunk { state: 'not-started',
+  createdOn: 2019-02-24T06:58:46.125Z,
+  modifiedOn: 2019-02-24T06:58:46.125Z,
+  _id: 5c7240a6c03f6d720ea0915d,
+  id: 'a19c7960-3801-11e9-8d10-5558cc477788',
+  title: 'title 6',
+  text: 'text 6',
+  userId: 'test' }
+[2019-02-24T12:28:47.354] [INFO] default - data inserted
+[2019-02-24T12:28:47.362] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:47.363] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:47.364] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:47.365] [INFO] default - calling next
+[2019-02-24T12:28:47.366] [INFO] default - Get notes data
+[2019-02-24T12:28:47.367] [INFO] default - getting notes as stream for userid -  test
+[2019-02-24T12:28:47.372] [INFO] default - []
+[2019-02-24T12:28:47.382] [INFO] default - read finished [ { _id: '5c7240a6c03f6d720ea09158',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19aa4a0-3801-11e9-8d10-5558cc477788',
+    title: 'title 1',
+    text: 'text 1',
+    userId: 'test' },
+  { _id: '5c7240a6c03f6d720ea09159',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19bb610-3801-11e9-8d10-5558cc477788',
+    title: 'title 2',
+    text: 'text 2',
+    userId: 'test' },
+  { _id: '5c7240a6c03f6d720ea0915a',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19c0430-3801-11e9-8d10-5558cc477788',
+    title: 'title 3',
+    text: 'text 3',
+    userId: 'test' },
+  { _id: '5c7240a6c03f6d720ea0915b',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19c2b40-3801-11e9-8d10-5558cc477788',
+    title: 'title 4',
+    text: 'text 4',
+    userId: 'test' },
+  { _id: '5c7240a6c03f6d720ea0915c',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19c5250-3801-11e9-8d10-5558cc477788',
+    title: 'title 5',
+    text: 'text 5',
+    userId: 'test' },
+  { _id: '5c7240a6c03f6d720ea0915d',
+    state: 'not-started',
+    createdOn: '2019-02-24T06:58:46.125Z',
+    modifiedOn: '2019-02-24T06:58:46.125Z',
+    id: 'a19c7960-3801-11e9-8d10-5558cc477788',
+    title: 'title 6',
+    text: 'text 6',
+    userId: 'test' } ]
+[2019-02-24T12:28:47.394] [INFO] default - header :  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:47.394] [INFO] default - token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RVc2VyIiwidXNlcklkIjoiYTE0MDlkYzAtMzgwMS0xMWU5LThkMTAtNTU1OGNjNDc3Nzg4IiwiaWF0IjoxNTUwOTkxNTI2LCJleHAiOjE1NTEwMjc1MjZ9.bRcUOy-j9_VsZtg8re6WsP9ZM1o2fFAbWaahnht_hes
+[2019-02-24T12:28:47.395] [INFO] default - err in verifytoken: undefined
+[2019-02-24T12:28:47.395] [INFO] default - calling next
+[2019-02-24T12:28:47.395] [INFO] default - Get notes data
+[2019-02-24T12:28:47.396] [INFO] default - getting notes as stream for userid -  unknown
+[2019-02-24T12:28:47.397] [INFO] default - []
+[2019-02-24T12:28:47.400] [INFO] default - read finished []

@@ -9,103 +9,78 @@ describe('Streams Test scenarios', () => {
 
     let token;
 
-    // before('DB connection', () => {
-    //     appservice.connectToDatabase();
-    // });
-
-    it('test', (done) => {
-        
-        try {
-            request(app)
-            .get(`api/v1/`)
-            .expect(200)
+    it('Register a user', (done) => {
+        request(app)
+            .post(`/api/v1/users/register/`)
+            .send(config.USER_1)
+            .expect(201)
             .then((response) => {
+                expect(response.body.user).to.have.property('userInfo');
+                expect(response.body.user.userInfo).to.equal(config.USER_1.username);
                 done();
             });
-        } catch (error) {
-            log.info('error :', error);
-            
-        }
-        
+
     });
 
-    // it('Register a user', (done) => {
-        
+    it('Login a user', (done) => {
+        //done();
 
-    //     try {
-    //         request(app)
-    //         .post(`api/v1/users/register/`)
-    //         .send(config.USER_1)
-    //         .expect(201)
-    //         .then((response) => {
-    //             expect(response.body).to.have.property('userInfo');
-    //             expect(response.body.userInfo).to.equal(config.USER_1.username);
-    //             done();
-    //         });
-    //     } catch (error) {
-    //         log.info('error :', error);
-            
-    //     }
-        
-    // });
+        request(app)
+            .post(`/api/v1/users/login`)
+            .send(config.USER_1)
+            .expect(200)
+            .then((response) => {
 
-    // it('Login a user', () => {
-    //     //done();
+                expect(response.body).to.have.property('user');
+                expect(response.body).to.have.property('token');
 
-    //     request(app)
-    //         .post(`api/v1/users/login`)
-    //         .send(config.USER_1)
-    //         .expect(200)
-    //         .then((response) => {
+                expect(response.body.user).to.have.property('userName');
+                expect(response.body.user.userName).to.equal(config.USER_1.username);
 
-    //             expect(response.body).to.have.property('user');
-    //             expect(response.body).to.have.property('token');
+                token = response.body.token;
 
-    //             expect(response.body.user).to.have.property('userName');
-    //             expect(response.body.user.userName).to.equal(config.USER_1.username);
+                done();
+            });
+    });
 
-    //             token = response.body.token;
+    it('Upload data to mongo as Streams for a user', (done) => {
 
-    //             done();
-    //         });
-    // });
 
-    // it('Upload data to mongo as Streams for a user', () => {
-    //     request(app)
-    //         .post(`api/v1/notes/streams?userId=${config.userID}`)
-    //         .set('Authorization', `Bearer ${token}`)
-    //         .expect(201)
-    //         .then((response) => {
-    //             expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
-    //             done();
-    //         });
-    // });
+        request(app)
+            .post(`/api/v1/notes/stream?userId=${config.userID}`)
+            .set('Authorization', `Bearer ${token}`)
+            .expect(201)
+            .then((response) => {
+                expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
+                done();
+            });
+    });
 
-    // it('Read data from mongo as Streams for a user', () => {
-    //     request(app)
-    //         .get(`api/v1/notes/streams?userId=${config.userID}`)
-    //         .set('Authorization', `Bearer ${token}`)
-    //         .expect(200)
-    //         .then((response) => {
-    //             expect(response.body).to.have.property('message');
-    //             expect(response.body).to.have.property('data');
-    //             expect(response.body.data).to.be.an('array');
-    //             expect(response.body.data).to.not.be.empty;
-    //             done();
-    //         });
-    // });
+    it('Read data from mongo as Streams for a user', (done) => {
+        request(app)
+            .get(`/api/v1/notes/stream?userId=${config.userID}`)
+            .set('Authorization', `Bearer ${token}`)
+            .expect(200)
+            .then((response) => {
+                expect(response.body).to.have.property('message');
+                expect(response.body).to.have.property('data');
+                expect(response.body.data).to.be.an('array');
+                expect(response.body.data).to.not.be.empty;
+                done();
+            });
+    });
 
-    // it('Read data from mongo as Streams for new user', () => {
-    //     request(app)
-    //         .get(`api/v1/notes/streams?userId=${config.userID_1}`)
-    //         .set('Authorization', `Bearer ${token}`)
-    //         .expect(200)
-    //         .then((response) => {
-    //             expect(response.body).to.have.property('message');
-    //             expect(response.body).to.have.property('data');
-    //             expect(response.body.data).to.be.an('array');
-    //             expect(response.body.data).to.be.empty;
-    //             done();
-    //         });
-    // });
+    it('Read data from mongo as Streams for new user', (done) => {
+        request(app)
+            .get(`/api/v1/notes/stream?userId=${config.userID_1}`)
+            .set('Authorization', `Bearer ${token}`)
+            .expect(200)
+            .then((response) => {
+                expect(response.body).to.have.property('message');
+                expect(response.body).to.have.property('data');
+                expect(response.body.data).to.be.an('array');
+                expect(response.body.data).to.be.empty;
+                done();
+            });
+    });
 })
