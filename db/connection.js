@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 const { dbConfig }  = require('../config').appConfig;
-const logger = require('../../logger');
+const logger = require('../logger');
 
 // create mongo connection
 function createMongoConnection() {
