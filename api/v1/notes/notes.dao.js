@@ -7,7 +7,7 @@ const { dbConfig } = require('../../../config').appConfig;
 const { Transform } = require('stream');
 const uuidv1 = require('uuid/v1');
 
-const log = require('../../../../logger');
+const log = require('../../../logger');
 
 const readNotesAsStream = (userId) => {
     return new Promise((resolve, reject) => {
@@ -88,7 +88,7 @@ const bulkInsert = (userId) => {
             const writableStream = streamToMongo.streamToMongoDB(outputDBConfig);
 
             // create readable stream and consume it
-            const mock_notes = path.resolve(__dirname, '../../../../mock_notes.json');
+            const mock_notes = path.resolve(__dirname, '../../../mock_notes.json');
 
             fs.createReadStream(mock_notes, 'utf8')
                 .pipe(JSONStream.parse('*'))

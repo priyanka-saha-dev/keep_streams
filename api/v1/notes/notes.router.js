@@ -4,7 +4,7 @@ const notesController = require('./notes.controller');
 //const storage = multer.memoryStorage();
 //const upload = multer({ storage: storage });
 const auth = require('../auth/auth');
-const log = require('../../../../logger');
+const log = require('../../../logger');
 
 router.use(auth.isUserAuthenticated);
 
