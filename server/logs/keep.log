@@ -722,3 +722,101 @@
 [2019-02-24T12:44:09.684] [INFO] default - getting notes as stream for userid -  unknown
 [2019-02-24T12:44:09.685] [INFO] default - []
 [2019-02-24T12:44:09.688] [INFO] default - read finished []
+[2019-02-24T13:22:16.100] [INFO] default - Connected to mongo database
+[2019-02-24T13:22:16.174] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T13:22:16.186] [INFO] default - user data for Register:  { _id: 5c724d305a16587aa0571fb6,
+  username: 'testUser',
+  password: 'test',
+  userId: '1a7e3290-3809-11e9-9104-cfff7aa51b56' }
+[2019-02-24T13:22:16.203] [INFO] default - Error occured in DAO { MongoError: E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }
+    at Function.create (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/operations/collection_ops.js:859:39)
+    at /home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+  driver: true,
+  name: 'MongoError',
+  index: 0,
+  code: 11000,
+  errmsg:
+   'E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }',
+  [Symbol(mongoErrorContextSymbol)]: {} }
+[2019-02-24T13:22:16.204] [INFO] default - Promise rejected with { message: 'username is already exist', status: 403 }
+[2019-02-24T13:22:47.747] [INFO] default - Connected to mongo database
+[2019-02-24T13:22:47.806] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T13:22:47.818] [INFO] default - user data for Register:  { _id: 5c724d4f3d7c4c7ad0a20f68,
+  username: 'testUser',
+  password: 'test',
+  userId: '2d58db90-3809-11e9-8ad8-e3ddad0e05b3' }
+[2019-02-24T13:22:47.851] [INFO] default - Error occured in DAO { MongoError: E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }
+    at Function.create (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/operations/collection_ops.js:859:39)
+    at /home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+  driver: true,
+  name: 'MongoError',
+  index: 0,
+  code: 11000,
+  errmsg:
+   'E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }',
+  [Symbol(mongoErrorContextSymbol)]: {} }
+[2019-02-24T13:22:47.854] [INFO] default - Promise rejected with { message: 'username is already exist', status: 403 }
+[2019-02-24T13:22:57.736] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T13:22:57.755] [INFO] default - login with payload { userName: 'testUser',
+  userId: 'c6e67480-3803-11e9-b528-2fe257b24f8f' }
+[2019-02-24T13:22:57.755] [INFO] default - Sign token
+[2019-02-24T13:22:57.762] [INFO] default - err null
+[2019-02-24T13:22:57.762] [INFO] default - Promise resolved
+[2019-02-24T13:23:32.339] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T13:23:32.353] [INFO] default - user data for Register:  { _id: 5c724d7c2939fd7b1b1b5e90,
+  username: 'testUser',
+  password: 'test',
+  userId: '47e45c00-3809-11e9-b695-d9a59c8d4d87' }
+[2019-02-24T13:23:32.391] [INFO] default - Connected to mongo database
+[2019-02-24T13:23:32.420] [INFO] default - Error occured in DAO { MongoError: E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }
+    at Function.create (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb/lib/operations/collection_ops.js:859:39)
+    at /home/priyanka/StackRoute-Assignments/keep_streams/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+  driver: true,
+  name: 'MongoError',
+  index: 0,
+  code: 11000,
+  errmsg:
+   'E11000 duplicate key error collection: keep.users index: username_1 dup key: { : "testUser" }',
+  [Symbol(mongoErrorContextSymbol)]: {} }
+[2019-02-24T13:23:32.421] [INFO] default - Promise rejected with { message: 'username is already exist', status: 403 }
+[2019-02-24T13:23:42.299] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T13:23:42.326] [INFO] default - login with payload { userName: 'testUser',
+  userId: 'c6e67480-3803-11e9-b528-2fe257b24f8f' }
+[2019-02-24T13:23:42.326] [INFO] default - Sign token
+[2019-02-24T13:23:42.333] [INFO] default - err null
+[2019-02-24T13:23:42.334] [INFO] default - Promise resolved
+[2019-02-24T13:24:46.140] [INFO] default - Connected to mongo database
+[2019-02-24T13:24:46.213] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T13:24:46.226] [INFO] default - user data for Register:  { _id: 5c724dc6d569317b7a812675,
+  username: 'testUser',
+  password: 'test',
+  userId: '73ec7c10-3809-11e9-b3cb-7b1f5179d92b' }
+[2019-02-24T13:24:46.691] [INFO] default - Success occured in DAO
+[2019-02-24T13:24:46.692] [INFO] default - Promise resolved { message: 'Registration Success.',
+  status: 201,
+  user: { userInfo: 'testUser' } }
+[2019-02-24T13:25:20.226] [INFO] default - Connected to mongo database
+[2019-02-24T13:25:20.322] [INFO] default - Register user with { username: 'testUser', password: 'test' }
+[2019-02-24T13:25:20.334] [INFO] default - user data for Register:  { _id: 5c724de82ef3a77bc7268b89,
+  username: 'testUser',
+  password: 'test',
+  userId: '8840f3d0-3809-11e9-a3c8-1577782e18a2' }
+[2019-02-24T13:25:20.785] [INFO] default - Success occured in DAO
+[2019-02-24T13:25:20.786] [INFO] default - Promise resolved { message: 'Registration Success.',
+  status: 201,
+  user: { userInfo: 'testUser' } }
+[2019-02-24T13:25:20.823] [INFO] default - user data for Login:  { username: 'testUser', password: 'test' }
+[2019-02-24T13:25:20.967] [INFO] default - login with payload { userName: 'testUser',
+  userId: '8840f3d0-3809-11e9-a3c8-1577782e18a2' }
+[2019-02-24T13:25:20.968] [INFO] default - Sign token
+[2019-02-24T13:25:20.975] [INFO] default - err null
+[2019-02-24T13:25:20.976] [INFO] default - Promise resolved

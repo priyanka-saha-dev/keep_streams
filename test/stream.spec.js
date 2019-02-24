@@ -11,7 +11,7 @@ describe('Streams Test scenarios', () => {
     it('Register a user', (done) => {
         //done();
         request(app)
-            .post(`/api/v1/users/register/`)
+            .post(`/api/v1/users/register`)
             .send(config.USER_1)
             .expect(201)
             .then((response) => {
@@ -23,7 +23,7 @@ describe('Streams Test scenarios', () => {
     });
 
     it('Login a user', (done) => {
-        done();
+        //done();
 
         request(app)
             .post(`/api/v1/users/login`)
@@ -45,7 +45,7 @@ describe('Streams Test scenarios', () => {
 
     it('Upload data to mongo as Streams for a user', (done) => {
 
-        //done();
+        done();
         // request(app)
         //     .post(`/api/v1/notes/stream?userId=${config.userID}`)
         //     .set('Authorization', `Bearer ${token}`)
