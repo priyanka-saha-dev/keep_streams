@@ -9,16 +9,16 @@ describe('Streams Test scenarios', () => {
     let token;
 
     it('Register a user', (done) => {
-        done();
-        // request(app)
-        //     .post(`/api/v1/users/register/`)
-        //     .send(config.USER_1)
-        //     .expect(201)
-        //     .then((response) => {
-        //         expect(response.body.user).to.have.property('userInfo');
-        //         expect(response.body.user.userInfo).to.equal(config.USER_1.username);
-        //         done();
-        //     });
+        //done();
+        request(app)
+            .post(`/api/v1/users/register/`)
+            .send(config.USER_1)
+            .expect(201)
+            .then((response) => {
+                expect(response.body.user).to.have.property('userInfo');
+                expect(response.body.user.userInfo).to.equal(config.USER_1.username);
+                done();
+            });
 
     });
 
@@ -45,15 +45,15 @@ describe('Streams Test scenarios', () => {
 
     it('Upload data to mongo as Streams for a user', (done) => {
 
-        done();
-        // request(app)
-        //     .post(`/api/v1/notes/stream?userId=${config.userID}`)
-        //     .set('Authorization', `Bearer ${token}`)
-        //     .expect(201)
-        //     .then((response) => {
-        //         expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
-        //         done();
-        //     });
+        //done();
+        request(app)
+            .post(`/api/v1/notes/stream?userId=${config.userID}`)
+            .set('Authorization', `Bearer ${token}`)
+            .expect(201)
+            .then((response) => {
+                expect(response.body.message).to.equal(config.INSERT_OK_MESSAGE);
+                done();
+            });
     });
 
     it('Read data from mongo as Streams for a user', (done) => {
