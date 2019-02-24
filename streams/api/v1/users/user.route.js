@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const controller = require('./user.controller');
-const log = require('../../../logger');
+const log = require('../../../../logger');
 
 router.post('/login', (req, res, next) => {
   controller.login(req.body).then((response) => {

@@ -1,7 +1,7 @@
-const app = require('../app')
+const app = require('../../app')
 const http = require('http');
 const { serverConfig } = require('../config').appConfig;
-const appService = require('../app.service')
+const appService = require('../../app.service')
 
 // Create HTTP server
 let server = http.createServer(app);

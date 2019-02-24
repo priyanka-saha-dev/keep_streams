@@ -2,7 +2,7 @@ const User = require('./user.entity');
 const uuidv1 = require('uuid/v1');
 const auth = require('../auth/auth');
 const { authConfig } = require('../../../config').appConfig;
-const log = require('../../../logger');
+const log = require('../../../../logger');
 
 const login = (info) => {
   log.info('user data for Login: ', info);

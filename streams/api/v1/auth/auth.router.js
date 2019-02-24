@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const auth = require('./auth')
-const log = require('../../../logger');
+const log = require('../../../../logger');
 
 // api to check is user authenticated or not
 router.post('/isAuthenticated', (req, res, next) => {

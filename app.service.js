@@ -1,9 +1,9 @@
 const bodyParser = require('body-parser');
 //const cors = require('cors')
 const logger = require('./logger');
-const api = require('./api/v1');
-const { serverConfig } = require('./config').appConfig;
-const db = require('./db');
+const api = require('./streams/api/v1');
+const { serverConfig } = require('./streams/config').appConfig;
+const db = require('./streams/db');
 
 
 //Event listener for HTTP server "error" event.
