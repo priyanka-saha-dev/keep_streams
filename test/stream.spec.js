@@ -18,6 +18,8 @@ describe('Streams Test scenarios', () => {
                 expect(response.body.user).to.have.property('userInfo');
                 expect(response.body.user.userInfo).to.equal(config.USER_1.username);
                 done();
+            }).catch((error) => {
+                done(error);
             });
 
     });
@@ -40,6 +42,8 @@ describe('Streams Test scenarios', () => {
                 token = response.body.token;
 
                 done();
+            }).catch((error) => {
+                done(error);
             });
     });
 

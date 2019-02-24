@@ -9,7 +9,7 @@ const log = require('../../../logger');
 router.use(auth.isUserAuthenticated);
 
 router.get('/', (req, res) => {
-    //log.info('base note route');
+    log.info('base note route');
     res.status(200).send("Get Notes All");
 });
 
