@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 const { dbConfig }  = require('../config').appConfig;
-const logger = require('../logger');
+//const logger = require('../logger');
 
 // create mongo connection
 function createMongoConnection() {
@@ -14,12 +14,12 @@ function getMongoConnection() {
 
 // Event listener for mongo "error" event.
 function onError(err) {
- logger.error('Error in database connection...', err);
+ //logger.error('Error in database connection...', err);
 }
 
 //Event listener for mongo "open" event
 function onSuccess() {
- logger.info('Connected to mongo database');
+ //logger.info('Connected to mongo database');
 }
 
 module.exports = {

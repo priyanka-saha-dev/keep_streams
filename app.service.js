@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser');
 //const cors = require('cors')
-const logger = require('./logger');
+// const logger = require('./logger');
 const api = require('./api/v1');
 const { serverConfig } = require('./config').appConfig;
 const db = require('./db');
@@ -15,10 +15,10 @@ const onError = (error) => {
   // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
-      logger.error(bind + ' requires elevated privileges');
+      //logger.error(bind + ' requires elevated privileges');
       break;
     case 'EADDRINUSE':
-      logger.error(bind + ' is already in use');
+      //logger.error(bind + ' is already in use');
       break;
     default:
       throw error;
@@ -27,7 +27,7 @@ const onError = (error) => {
 
 //Event listener for HTTP server "listening" event.
 const onListening = () => {
-  logger.info(`Server running at http://${serverConfig.hostname}:${serverConfig.port}/`);
+  //logger.info(`Server running at http://${serverConfig.hostname}:${serverConfig.port}/`);
 }
 
 // create db connection 
@@ -67,7 +67,7 @@ const errorHandler404 = (app) => {
     err.status = 404;
     err.url = originUrl
     err.message = `Http failure response for ${originUrl}: 404 Not Found`,
-      logger.error(err.message);
+      //logger.error(err.message);
     res.send(err);
   });
 }
