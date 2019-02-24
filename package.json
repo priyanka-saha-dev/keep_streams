@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "test": "mocha ./test/*.spec.js --timeout 10000",
-    "lint": "node_modules/.bin/eslint './streams/api/v1/**/*.js' --ignore-path .eslintignore"
+    "lint": "node_modules/.bin/eslint './api/v1/**/*.js' --ignore-path .eslintignore"
   },
   "repository": {
     "type": "git",
