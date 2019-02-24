@@ -2,11 +2,8 @@ const User = require('./user.entity');
 const uuidv1 = require('uuid/v1');
 const auth = require('../auth/auth');
 const { authConfig } = require('../../../config').appConfig;
-const log = require('../../../logger');
 
 const login = (info) => {
-  log.info('user data for Login: ', info);
-
   return new Promise((resolve, reject) => {
     const query = {
       username : info.username
@@ -36,10 +33,7 @@ const login = (info) => {
           userId : doc.userId
         }
 
-        log.info('login with payload' , payload);
-
         auth.signToken(payload, authConfig.jwtSecret, '10h', (err, token) => {
-          log.info('err', err);
           if(err) {
             reject({
               message: 'Passwords is incorrect',
@@ -66,11 +60,8 @@ const register = (info) => {
 
     user.userId = uuidv1();
 
-    log.info('user data for Register: ', user);
     user.save((error, doc) => {
       if (error) {
-        log.info('Error occured in DAO', error);
-
         if(error.message.includes('duplicate')) {
           reject({
             message: 'username is already exist',
@@ -84,7 +75,6 @@ const register = (info) => {
         }
 
       } else {
-        log.info('Success occured in DAO');
         let user = {
           userInfo: doc.username
         }

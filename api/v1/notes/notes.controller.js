@@ -1,9 +1,7 @@
 const notesService = require('./notes.service');
-const log = require('../../../logger');
 
 const getNotesAsStream = (req, res) => {
     try {
-        log.info("Get notes data")
         const userId = req.query.userId;
         notesService.getNotesAsStream(userId)
             .then((result) => {
@@ -21,7 +19,6 @@ const getNotesAsStream = (req, res) => {
 
 const uploadNotes = (req, res) => {
     try {
-        log.info("Upload bulk data")
         const userId = req.query.userId;
         notesService.uploadNotes(userId)
             .then((result) => {

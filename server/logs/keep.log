@@ -900,3 +900,4 @@
 [2019-02-24T13:32:14.977] [INFO] default - Sign token
 [2019-02-24T13:32:14.984] [INFO] default - err null
 [2019-02-24T13:32:14.985] [INFO] default - Promise resolved
+[2019-02-24T23:48:32.583] [INFO] default - Connected to mongo database

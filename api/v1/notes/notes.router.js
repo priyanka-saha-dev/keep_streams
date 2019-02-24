@@ -4,12 +4,10 @@ const notesController = require('./notes.controller');
 //const storage = multer.memoryStorage();
 //const upload = multer({ storage: storage });
 const auth = require('../auth/auth');
-const log = require('../../../logger');
 
 router.use(auth.isUserAuthenticated);
 
 router.get('/', (req, res) => {
-    log.info('base note route');
     res.status(200).send("Get Notes All");
 });
 
