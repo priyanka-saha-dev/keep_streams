@@ -5,5 +5,9 @@ module.exports = {
         "username" : "testUser",
         "password" : "test"
     },
-    "INSERT_OK_MESSAGE" : "Notes inserted"
+    "INSERT_OK_MESSAGE" : "Notes inserted",
+    "AUTH" : {
+        "SECRET_KET" : "jwttokenbasedauth",
+        "expiresInHour" : "10h"
+    }
 };
