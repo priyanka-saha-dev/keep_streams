@@ -10,20 +10,20 @@ describe('Streams Test scenarios', () => {
     let userToken;
 
     // Initialize db connection before all tests
-    before((done) => {
-        modules.initializeMongooseConnection()
-            .then(() => {
-                done();
-            });
-    });
+    // before((done) => {
+    //     modules.initializeMongooseConnection()
+    //         .then(() => {
+    //             done();
+    //         });
+    // });
 
     // clear notes collection
-    before((done) => {
-        modules.noteModel.remove({}, (err) => {
-            if (err) return done(err);
-            done();
-        });
-    });
+    // before((done) => {
+    //     modules.noteModel.remove({}, (err) => {
+    //         if (err) return done(err);
+    //         done();
+    //     });
+    // });
 
     // Get JWT token for user 1
     before((done) => {
